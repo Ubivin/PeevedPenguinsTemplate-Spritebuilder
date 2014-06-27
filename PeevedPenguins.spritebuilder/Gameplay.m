@@ -52,4 +52,9 @@
     // reload this level
     [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"Gameplay"]];
 }
+
+self.position = ccp(0, 0);
+CCActionFollow *follow = [CCActionFollow actionWithTarget:penguin worldBoundary:self.boundingBox];
+[_contentNode runAction:follow];
+
 @end

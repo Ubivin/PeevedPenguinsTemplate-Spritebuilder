@@ -326,8 +326,6 @@
 								</array>
 							</dict>
 						</array>
-						<key>seqExpanded</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -844,7 +842,7 @@
 					</dict>
 				</array>
 				<key>customClass</key>
-				<string>_contentNode</string>
+				<string></string>
 				<key>displayName</key>
 				<string>contentNode</string>
 				<key>memberVarAssignmentName</key>

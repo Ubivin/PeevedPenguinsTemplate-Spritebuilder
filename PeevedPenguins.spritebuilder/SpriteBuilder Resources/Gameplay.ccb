@@ -78,7 +78,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>0.0</real>
+									<real>1</real>
 									<real>0.0</real>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -294,12 +294,34 @@
 									<real>43.54296875</real>
 								</array>
 								<array>
+									<real>210.6875</real>
+									<real>38.28125</real>
+								</array>
+								<array>
+									<real>213.08984375</real>
+									<real>24.84765625</real>
+								</array>
+								<array>
 									<real>211.7578125</real>
 									<real>1.55078125</real>
 								</array>
 							</array>
 							<key>polygons</key>
 							<array>
+								<array>
+									<array>
+										<real>211.7578125</real>
+										<real>1.55078125</real>
+									</array>
+									<array>
+										<real>213.08984375</real>
+										<real>24.84765625</real>
+									</array>
+									<array>
+										<real>210.6875</real>
+										<real>38.28125</real>
+									</array>
+								</array>
 								<array>
 									<array>
 										<real>209.8515625</real>
@@ -334,6 +356,10 @@
 									<array>
 										<real>211.7578125</real>
 										<real>1.55078125</real>
+									</array>
+									<array>
+										<real>210.6875</real>
+										<real>38.28125</real>
 									</array>
 									<array>
 										<real>209.8515625</real>

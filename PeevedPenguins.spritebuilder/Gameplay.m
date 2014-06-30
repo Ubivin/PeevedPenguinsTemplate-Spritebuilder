@@ -14,6 +14,9 @@
     CCNode *_levelNode;
     CCNode *_contentNode;
     CCNode *_pullbackNode;
+    CCNode *_mouseJointNode;
+    CCPhysicsJoint *_mouseJoint;
+    CCNode *_pullBackNode;
 
 
 }
@@ -29,6 +32,7 @@
     _physicsNode.debugDraw = TRUE;
     // nothing shall collide with our invisible nodes
     _pullbackNode.physicsBody.collisionMask = @[];
+    
 }
 
 // called on every touch in this scene

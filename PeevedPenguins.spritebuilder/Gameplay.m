@@ -48,6 +48,8 @@
     {
         // move the mouseJointNode to the touch position
         _mouseJointNode.position = touchLocation;
+        // create a joint to keep the penguin fixed to the scoop until the catapult is released
+        _penguinCatapultJoint = [CCPhysicsJoint connectedPivotJointWithBodyA:_currentPenguin.physicsBody bodyB:_catapultArm.physicsBody anchorA:_currentPenguin.anchorPointInPoints];
         
         // setup a spring joint between the mouseJointNode and the catapultArm
         _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(34, 138) restLength:0.f stiffness:3000.f damping:150.f];
@@ -62,8 +64,6 @@
         // we don't want the penguin to rotate in the scoop
         _currentPenguin.physicsBody.allowsRotation = FALSE;
         
-        // create a joint to keep the penguin fixed to the scoop until the catapult is released
-        _penguinCatapultJoint = [CCPhysicsJoint connectedPivotJointWithBodyA:_currentPenguin.physicsBody bodyB:_catapultArm.physicsBody anchorA:_currentPenguin.anchorPointInPoints];
         
         // releases the joint and lets the penguin fly
         [_penguinCatapultJoint invalidate];
